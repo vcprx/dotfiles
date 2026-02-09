@@ -40,6 +40,10 @@ ln -s "$(PWD)/.vimrc" "$HOME/.vimrc"
 
 rm -f "$HOME/.oh-my-zsh/themes/cprz.zsh-theme" 
 ln -s "$(PWD)/cprz.zsh-theme" "$HOME/.oh-my-zsh/themes/cprz.zsh-theme"
+# Removes ~/.claude if it exists and symlinks the new one from the current directory (dotfiles)
+rm -rf "$HOME/.claude"
+ln -s "$(PWD)/config/claude" "$HOME/.claude"
+
 
 # Update Homebrew recipes
 brew update
