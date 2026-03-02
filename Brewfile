@@ -3,6 +3,7 @@ tap 'homebrew/bundle'
 tap 'brew tap oven-sh/bun'
 
 # Binaries
+brew 'gh'
 
 # Development
 brew 'php'
