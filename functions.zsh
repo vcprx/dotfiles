@@ -9,7 +9,7 @@ function commit() {
      local spinner=('⠋' '⠙' '⠹' '⠸' '⠼' '⠴' '⠦' '⠧' '⠇' '⠏')
      local i=0
      (while true; do
-       printf "\r${spinner[$((i % ${#spinner[@]}))]} Generating commit message..." >&2
+       printf "\r${spinner[$((i % ${#spinner[@]} + 1))]} Generating commit message..." >&2
        i=$((i + 1))
        sleep 0.1
      done) &
