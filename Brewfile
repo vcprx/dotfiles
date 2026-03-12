@@ -4,6 +4,7 @@ tap 'brew tap oven-sh/bun'
 
 # Binaries
 brew 'gh'
+brew 'glab'
 
 # Development
 brew 'php'
