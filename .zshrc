@@ -106,3 +106,4 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 source $DOTFILES/functions.zsh
+export PATH="$HOME/.config/composer/vendor/bin:$PATH"
