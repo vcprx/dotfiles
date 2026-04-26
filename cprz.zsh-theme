@@ -1,5 +1,5 @@
 # Define an array of emojis
-PROMPT_ICONS=("🚀" "🔥" "🍆" "💦" "👽" "👾" "🍑")
+PROMPT_ICONS=("🚀" "🔥" "🍆" "💦" "👽" "👾")
 
 # Pick a random emoji, ensuring a valid index
 RANDOM_ICON="${PROMPT_ICONS[RANDOM % ${#PROMPT_ICONS[@]} + 1]}"
