@@ -34,6 +34,11 @@ rm -rf "$HOME/.config/ghostty"
 [ ! -d "$HOME/.config/ghostty" ] && mkdir "$HOME/.config/ghostty"
 ln -s "$(PWD)/.ghostty/config" "$HOME/.config/ghostty/config"
 
+# Removes ~/.config/zed/settings.json if it exists and symlinks the new one from the current directory (dotfiles)
+[ ! -d "$HOME/.config/zed" ] && mkdir "$HOME/.config/zed"
+rm -f "$HOME/.config/zed/settings.json"
+ln -s "$(PWD)/.zed/settings.json" "$HOME/.config/zed/settings.json"
+
 # Removes ~/.vimrc if it exists and symlinks the new one from the current directory (dotfiles)
 rm -f "$HOME/.vimrc"
 ln -s "$(PWD)/.vimrc" "$HOME/.vimrc"
