@@ -9,12 +9,11 @@ brew 'jq'
 brew 'opencode'
 
 # Development
-brew 'php'
+brew 'php@8.4'
 brew 'composer'
 brew 'node'
 brew 'bun'
 brew 'go'
-brew 'python3'
 
 # Apps
 cask 'ghostty'
