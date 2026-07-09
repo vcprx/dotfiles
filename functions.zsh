@@ -1,5 +1,5 @@
 function commit() {
-  commitMessage="$*"
+  local commitMessage="$*"
 
   git add .
 
@@ -15,7 +15,9 @@ function commit() {
      done) &
      local spinner_pid=$!
 
-     commitMessage=$(echo "$diff_input" | claude -p "Write a single-line commit message for this diff. Output ONLY the message, no quotes, no explanation, no markdown.")
+     commitMessage=$(opencode run --format json "Write a single-line commit message for this diff. Output ONLY the message, no quotes, no explanation, no markdown.
+
+$diff_input" | jq -r 'select(.type == "text") | .part.text' | tr -d '\n')
 
      kill $spinner_pid 2>/dev/null
      printf "\r\033[K" >&2
@@ -26,4 +28,3 @@ function commit() {
 
   eval "git commit -a -m '${commitMessage}'"
 }
-

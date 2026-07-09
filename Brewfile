@@ -5,6 +5,8 @@ tap 'oven-sh/bun'
 # Binaries
 brew 'gh'
 brew 'glab'
+brew 'jq'
+brew 'opencode'
 
 # Development
 brew 'php'
@@ -29,4 +31,3 @@ cask 'zed'
 
 # Fonts
 cask 'font-source-code-pro'
-
