@@ -1,6 +1,6 @@
 # Taps
 tap 'homebrew/bundle'
-tap 'brew tap oven-sh/bun'
+tap 'oven-sh/bun'
 
 # Binaries
 brew 'gh'
@@ -10,7 +10,6 @@ brew 'glab'
 brew 'php'
 brew 'composer'
 brew 'node'
-brew 'npm'
 brew 'bun'
 brew 'go'
 brew 'python3'
@@ -26,4 +25,8 @@ cask 'claude-code'
 cask 'brave-browser'
 cask 'tableplus'
 cask 'phpstorm'
+cask 'zed'
+
+# Fonts
+cask 'font-source-code-pro'
 
