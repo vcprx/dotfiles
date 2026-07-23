@@ -27,6 +27,7 @@ cask 'brave-browser'
 cask 'tableplus'
 cask 'phpstorm'
 cask 'zed'
+cask 'dbngin'
 
 # Fonts
 cask 'font-source-code-pro'
