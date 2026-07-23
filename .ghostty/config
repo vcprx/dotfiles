@@ -5,3 +5,5 @@ font-size = 15
 # Adjust line height to 1.3 (the provided value is treated as "increase by")
 adjust-cell-height = "30%"
 
+# Theme
+theme = Catppuccin Macchiato
