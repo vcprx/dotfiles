@@ -28,3 +28,8 @@ $diff_input" | jq -r 'select(.type == "text") | .part.text' | tr -d '\n')
 
   eval "git commit -a -m '${commitMessage}'"
 }
+
+# Open PhpStorm without attaching the IDE to the current shell
+function phpstorm() {
+  open -a PhpStorm "${@:-.}"
+}
