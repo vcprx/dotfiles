@@ -107,3 +107,6 @@ source $ZSH/oh-my-zsh.sh
 
 source $DOTFILES/functions.zsh
 export PATH="$HOME/.config/composer/vendor/bin:$PATH"
+
+# Must stay last so direnv's PATH changes win
+eval "$(direnv hook zsh)"

@@ -11,6 +11,7 @@ The `fresh.sh` script creates symlinks from your home directory to the dotfiles 
 | `~/.zshrc` | `~/dotfiles/.zshrc` | Main Zsh configuration |
 | `~/.vimrc` | `~/dotfiles/.vimrc` | Vim configuration |
 | `~/.config/ghostty/config` | `~/dotfiles/.ghostty/config` | Ghostty terminal config |
+| `~/.config/git/ignore` | `~/dotfiles/.config/git/ignore` | Global gitignore (e.g. `.envrc`) |
 | `~/.oh-my-zsh/themes/cprz.zsh-theme` | `~/dotfiles/cprz.zsh-theme` | Custom Oh My Zsh theme |
 | `~/.claude` | `~/dotfiles/config/claude` | Claude Code skills directory |
 

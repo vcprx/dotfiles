@@ -43,6 +43,11 @@ ln -s "$(PWD)/.zed/settings.json" "$HOME/.config/zed/settings.json"
 rm -f "$HOME/.vimrc"
 ln -s "$(PWD)/.vimrc" "$HOME/.vimrc"
 
+# Removes ~/.config/git/ignore if it exists and symlinks the new one from the current directory (dotfiles)
+[ ! -d "$HOME/.config/git" ] && mkdir "$HOME/.config/git"
+rm -f "$HOME/.config/git/ignore"
+ln -s "$(PWD)/.config/git/ignore" "$HOME/.config/git/ignore"
+
 rm -f "$HOME/.oh-my-zsh/themes/cprz.zsh-theme" 
 ln -s "$(PWD)/cprz.zsh-theme" "$HOME/.oh-my-zsh/themes/cprz.zsh-theme"
 

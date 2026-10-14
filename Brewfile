@@ -7,9 +7,11 @@ brew 'gh'
 brew 'glab'
 brew 'jq'
 brew 'opencode'
+brew 'direnv'
 
 # Development
 brew 'php@8.4'
+brew 'php'
 brew 'composer'
 brew 'node'
 brew 'bun'
