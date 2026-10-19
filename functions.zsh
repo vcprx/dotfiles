@@ -33,3 +33,34 @@ $diff_input" | jq -r 'select(.type == "text") | .part.text' | tr -d '\n')
 function phpstorm() {
   open -a PhpStorm "${@:-.}"
 }
+
+# Run tests with Pest, falling back to PHPUnit
+function p() {
+  if [ -f vendor/bin/pest ]; then
+    vendor/bin/pest "$@"
+  else
+    vendor/bin/phpunit "$@"
+  fi
+}
+
+# Create a directory (and parents) and cd into it
+function mkd() {
+  mkdir -p "$@" && cd "$_"
+}
+
+# Run Laravel tests in parallel
+function pp() {
+  php artisan test --parallel "$@"
+}
+
+# Clone a GitHub repo using owner/repo shorthand
+function clone() {
+  gh repo clone "$1" "${@:2}"
+}
+
+# Show common DNS records for a domain
+function digga() {
+  for type in A AAAA CNAME MX NS TXT SOA; do
+    dig +noall +answer +multiline "$1" "$type"
+  done
+}
