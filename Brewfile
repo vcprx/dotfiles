@@ -8,6 +8,8 @@ brew 'glab'
 brew 'jq'
 brew 'opencode'
 brew 'direnv'
+brew 'eza'
+brew 'zoxide'
 
 # Development
 brew 'php@8.4'

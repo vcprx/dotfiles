@@ -17,3 +17,10 @@ alias cu="composer update"
 alias cr="composer require"
 alias ci="composer install"
 alias cda="composer dump-autoload -o"
+
+# eza
+if command -v eza &> /dev/null; then
+  alias ls="eza --icons --group-directories-first"
+  alias l="eza -la --icons --group-directories-first --hyperlink"
+  alias lt="eza --icons --tree --level=2"
+fi
